@@ -23,34 +23,20 @@ An AI-powered web application that automates the candidate screening process by 
 
 ## Folder Structure
 
-📁 agents/                            # Python modules for parsing and matching logic
-│   ├── jd_parser.py                 # Extracts and embeds job description skills
-│   ├── resume_parser.py            # Extracts and embeds skills from resumes
-│   └── skill_matcher.py            # Ranks candidates based on skill similarity
-
-📁 resumes/                           # Data folder for JD and resumes
-│   ├── job_description.csv         # Contains job roles and their descriptions
-│   └── CVs1/                       # Folder with uploaded candidate resumes (PDFs)
-
-📁 venv/                              # Virtual environment (excluded from Git)
-│   └── ...                         # All venv-related files (in .gitignore)
-
-📄 app.py                            # Main Streamlit app — UI + logic
-📄 requirements.txt                 # List of all project dependencies
-📄 test.py                          # Script to test individual modules or functions
+ resumes/ ├── job_description.csv # Job titles and corresponding JDs └── CVs1/ # PDF resumes to be screened  agents/ ├── jd_parser.py # JD skill extraction + embedding ├── resume_parser.py # Resume parsing logic └── skill_matcher.py # Candidate ranking logic app.py # Main Streamlit frontend requirements.txt # Python dependencies README.md # Project documentation
 
 ##  How to run
 
-1. **Clone the repository**
-   git clone https://github.com/yourusername/job_ai.git
+1. **Clone the repository** : 
+   git clone https://github.com/yourusername/job_ai.git, 
    cd job_ai
-2. **Create and activate a virtual environment**
-   python -m venv venv
-   venv\Scripts\activate  # For Windows
+2. **Create and activate a virtual environment** : 
+   python -m venv venv, 
+   venv\Scripts\activate  # For Windows, 
    source venv/bin/activate  # For macOS/Linux
-3. **Install dependencies**
+3. **Install dependencies** : 
    pip install -r requirements.txt
-4. **Run the app**
+4. **Run the app** :
    streamlit run app.py
 
 ## Dependencies
