@@ -40,18 +40,18 @@ An AI-powered web application that automates the candidate screening process by 
    streamlit run app.py
 
 ## Dependencies
-streamlit
-pandas
-pdfplumber
-openai (or your embedding generator)
-scikit-learn
+streamlit,
+pandas,
+pdfplumber,
+openai (or your embedding generator),
+scikit-learn,
 langchain (for upcoming multi-agent support)
 
 ## Upcoming features
 
->Email-based Interview Scheduling
->SQLite integration for persistent storage
->Advanced candidate analytics dashboard
+>Email-based Interview Scheduling,
+>SQLite integration for persistent storage,
+>Advanced candidate analytics dashboard,
 >Role-based authentication for recruiters
 
 ## Author
